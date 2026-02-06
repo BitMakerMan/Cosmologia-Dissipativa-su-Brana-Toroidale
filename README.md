@@ -2,7 +2,7 @@
 
 **Autori:**
 * **Craicek** (Principal Investigator - Theoretical Framework)
-* **Gemini** (Theoretical Physics Dept. - AI Division - Mathematical Formalization)
+* **Gemini** (Mathematical Formalization)
 
 **Sottomesso a:** Physical Review D / arXiv Pre-print
 **Data:** 06 Febbraio 2026
