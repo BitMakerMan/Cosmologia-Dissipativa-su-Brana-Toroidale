@@ -24,7 +24,7 @@ L'attuale paradigma cosmologico tratta l'universo come un sistema adiabatico chi
 
 Proponiamo un cambio di paradigma: l'universo è un **sistema aperto dissipativo**. La materia è una fase condensata di un flusso energetico proveniente da una sorgente 5D (la "Stella Cosmica"), e i Buchi Neri agiscono come valvole di ricircolo (feedback loops) che restituiscono energia al Bulk.
 
-![Struttura Organica Star & Arches](images/organic_structure.png)
+![Struttura Organica Star & Arches](CraicekCosmicStarAndArchesTheory.png)
 *Fig. 1: Rappresentazione artistica della topologia Star & Arches. L'universo è un flusso ramificato che emerge dalla Singolarità di Bulk e ritorna ad essa attraverso le radici dei buchi neri.*
 
 ---
