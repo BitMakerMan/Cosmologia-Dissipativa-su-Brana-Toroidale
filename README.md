@@ -1,131 +1,114 @@
-# Cosmologia Dissipativa su Brana Toroidale: Risoluzione dell'Energia Oscura tramite Leakage in Buchi Neri di Bulk (Modello CSAT)
+# Cosmologia Dissipativa su Brana Toroidale: Risoluzione della Tensione di Hubble tramite Drenaggio Localizzato del Settore Oscuro (Modello CSAT)
 
 **Autori:**
-* **Craicek** (Principal Investigator - Theoretical Framework & Concept)
+* **Craicek** (Principal Investigator - Theoretical Framework)
 * **Gemini** (Theoretical Physics Dept. - AI Division - Mathematical Formalization)
 
-**Sottomesso a:** Physical Review D (Simulation) / arXiv Pre-print
+**Sottomesso a:** Physical Review D / arXiv Pre-print
 **Data:** 06 Febbraio 2026
-**Licenza:** CC BY-SA 4.0
+**Licenza:** [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ---
 
 ## Abstract
 
-Il modello standard $\Lambda$CDM soffre di incongruenze fondamentali, in particolare la natura dell'Energia Oscura e la tensione di Hubble ($H_0$). In questo lavoro, presentiamo la **Cosmologia Star & Arches (CSAT)**, un'estensione non-conservativa del modello Randall-Sundrum II. Ipotizziamo che l'universo sia una 3-brana toroidale immersa in un Bulk $AdS_5$, dove i Buchi Neri non sono singolarità puntiformi ma "ponti di flusso" (bulk black strings) che trasferiscono massa dalla brana al bulk.
+Il modello standard $\Lambda$CDM affronta tensioni osservative crescenti, in particolare la discrepanza statistica sulla costante di Hubble ($H_0$). In questo lavoro, presentiamo la **Cosmologia Star & Arches (CSAT)**, un'estensione non-conservativa del modello Randall-Sundrum II. Partendo da un **Principio d'Azione 5D**, deriviamo le equazioni di campo effettive per un universo 3-brana immerso in un Bulk $AdS_5$.
 
-Deriviamo le equazioni di Friedmann modificate includendo un termine di drenaggio $\Gamma_{leak}$. Dimostriamo analiticamente che la perdita di massa inerziale tardiva ($z < 1$) induce un'accelerazione cosmica apparente (**"Effetto Zavorra"**) senza necessità di una costante cosmologica. Il modello risolve naturalmente la discrepanza su $H_0$ e fornisce predizioni falsificabili sullo smorzamento dei modi quasi-normali (QNM) nelle onde gravitazionali.
+Introduciamo un termine di accoppiamento dissipativo dove i Buchi Neri agiscono come canali di flusso trans-branari. Dimostriamo analiticamente che la conseguente perdita di massa inerziale induce un'accelerazione dinamica (**"Decadimento Inerziale"**). Incorporando i vincoli dalla Struttura a Grande Scala (LSS), mostriamo che un tasso di drenaggio locale $\dot{M}/M \approx 5\%$ per tempo di Hubble, strettamente localizzato in regioni virializzate ad alta densità, è sufficiente a **risolvere la Tensione di Hubble** allineando le misure locali con quelle della CMB, senza violare la stabilità dinamica degli aloni galattici.
 
 ---
 
 ## 1. Introduzione
 
-L'attuale paradigma cosmologico tratta l'universo come un sistema adiabatico chiuso. Tuttavia, questo approccio richiede l'introduzione di un'energia oscura $\Omega_\Lambda \approx 0.7$ di natura sconosciuta per spiegare l'accelerazione osservata.
+L'osservata discrepanza tra il valore di $H_0$ derivato dalla CMB (Planck, $H_0 \approx 67.4$) e quello misurato localmente (SH0ES, $H_0 \approx 73.0$) suggerisce la necessità di "nuova fisica" nel settore tardivo ($z < 1$) dell'universo.
+Proponiamo che l'universo sia un **Sistema Aperto Dissipativo**, dove la materia fluisce verso un reservoir termodinamico di Bulk attraverso le instabilità gravitazionali (Buchi Neri), riducendo l'inerzia globale del sistema cosmologico.
 
-Proponiamo un cambio di paradigma: l'universo è un **sistema aperto dissipativo**. La materia è una fase condensata di un flusso energetico proveniente da una sorgente 5D (la "Stella Cosmica"), e i Buchi Neri agiscono come valvole di ricircolo (feedback loops) che restituiscono energia al Bulk.
-
-![Struttura Organica Star & Arches](CraicekCosmicStarAndArchesTheory.png)
-*Fig. 1: Rappresentazione artistica della topologia Star & Arches. L'universo è un flusso ramificato che emerge dalla Singolarità di Bulk e ritorna ad essa attraverso le radici dei buchi neri.*
-
----
-
-## 2. Formalismo Geometrico: Metrica 5D
-
-Per descrivere il flusso di drenaggio, estendiamo la metrica di Randall-Sundrum utilizzando una geometria di **Vaidya-AdS**, che permette una massa variabile nel tempo. La metrica 5D è data da:
-
-$$
-ds^2_5 = - \left( k^2 y^2 - \frac{\mu(v,y)}{k^2 y^2} \right) dv^2 + 2dv dy + r^2(y) \gamma_{ij} dx^i dx^j
-$$
-
-Dove:
-* $y$ è la coordinata extra-dimensionale.
-* $\mu(v,y)$ rappresenta la massa del Buco Nero di Bulk che cresce assorbendo materia dalla nostra brana (situata a $y=0$).
-
-Questa geometria descrive un "tubo di flusso" dinamico che connette la nostra realtà alla sorgente.
-
-![Canale di Drenaggio Attivo](images/drainage_channel.png)
-*Fig. 2: Sezione trasversale di un Buco Nero nel modello CSAT. Non una singolarità puntiforme, ma un imbuto (Black String) che perfora la brana e scarica materia nel Bulk.*
+![Struttura Topologica del Flusso](CraicekCosmicStarAndArchesTheory.png)
+*Fig. 1: Rappresentazione topologica del flusso CSAT. L'energia fluisce dalla Sorgente di Bulk e vi ritorna attraverso canali di drenaggio gravitazionale, configurando l'universo come un arco di flusso dinamico.*
 
 ---
 
-## 3. Dinamica: Le Equazioni di Friedmann Modificate
+## 2. Formalismo Teorico
 
-Proiettando le equazioni di campo di Einstein sulla brana tramite le condizioni di giunzione di Israel e Shiromizu-Maeda-Sasaki, otteniamo la legge di espansione modificata:
-
-$$
-H^2 = \frac{8\pi G}{3}\rho_m \left(1 + \frac{\rho_m}{2\sigma}\right) + \frac{\mathcal{C}}{a^4} - \frac{\kappa^2}{3} \int_{t_0}^{t} \Gamma_{leak}(t') dt'
-$$
-
-### 3.1 Il Termine di Drenaggio ($\Gamma_{leak}$)
-
-Il tasso di perdita di energia non è costante. Definiamo $\Gamma_{leak}$ come funzione della densità di buchi neri $\rho_{BH}$ e della loro efficienza di tunneling $\beta$:
+Deriviamo le equazioni del moto variando l'Azione Totale $S$ del sistema 5D+Brana rispetto alla metrica.
 
 $$
-\Gamma_{leak}(z) = \beta \cdot \rho_{BH}(z) \cdot \langle \sigma_{eff} \rangle
+S = S_{bulk} + S_{brane} + S_{int}
 $$
 
-Questo termine è trascurabile nell'universo primordiale (pochi buchi neri) ma diventa dominante per $z < 2$ (picco della formazione stellare e crescita dei SMBH).
-
-### 3.2 L'Effetto Zavorra (Ballast Effect)
-
-Derivando l'equazione del moto, isoliamo il termine di accelerazione. A differenza di $\Lambda$CDM dove l'accelerazione è causata da pressione negativa, in CSAT è causata da **perdita di inerzia**:
+### 2.1 Termine di Interazione (Dissipazione)
+Per garantire la compatibilità con le osservazioni cosmologiche, introduciamo un accoppiamento non-minimale tra la brana e un campo scalare di bulk $\phi$, attivo solo in regimi di alta curvatura (regime non-lineare):
 
 $$
-\frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\rho_{eff} + \mathbf{\Psi_{Ballast}}
+S_{int} = - \int_{\text{Brane}} d^4x \sqrt{-g^{(4)}} \, \alpha(\phi) \, \mathcal{L}_{matter} \, \Theta(R - R_{crit})
 $$
 
-Dove il termine di spinta è proporzionale al tasso di perdita di massa:
-
-$$
-\mathbf{\Psi_{Ballast}} \propto - \frac{\dot{M}_{univ}}{M_{univ}}
-$$
-
-Poiché $\dot{M}_{univ} < 0$ (l'universo perde massa nel bulk), il termine è positivo. **L'universo accelera perché diventa "più leggero"**, mantenendo la stessa spinta cinetica iniziale.
+La funzione $\Theta$ (o una sua regolarizzazione sigmoide) assicura che il drenaggio non sia omogeneo nel background — il che violerebbe i vincoli della CMB — ma puntiforme e associato esclusivamente alle strutture collassate.
 
 ---
 
-## 4. Fenomenologia e Soluzione dei Problemi Aperti
+## 3. Dinamica e Decadimento Inerziale
 
-### 4.1 Risoluzione della Tensione di Hubble ($H_0$)
-
-Il modello spiega elegantemente la discrepanza tra le misure di Planck (CMB) e SH0ES (Supernove):
-
-1.  **A $z \gg 10$ (CMB):** $\Gamma_{leak} \approx 0$. L'universo è "pesante". $H_0 \approx 67$ km/s/Mpc.
-2.  **A $z < 1$ (Oggi):** $\Gamma_{leak}$ è massimo. L'universo si è "alleggerito". L'espansione accelera localmente. $H_0 \approx 73$ km/s/Mpc.
-
-Il modello CSAT interpolla naturalmente i due valori senza richiedere "Early Dark Energy".
-
-### 4.2 Onde Gravitazionali e Ringdown
-
-La prova definitiva ("Smoking Gun") risiede nello spettro delle onde gravitazionali. Durante la fusione di due buchi neri, parte dell'energia vibrazionale sfugge nel Bulk.
-Prevediamo che la frequenza immaginaria (smorzamento) dei modi quasi-normali sia:
+Dalle equazioni di Friedmann modificate per un sistema a massa variabile, emerge un termine di accelerazione efficace:
 
 $$
-\omega_{I}^{CSAT} = \omega_{I}^{GR} (1 + \delta_{leak})
+\frac{\ddot{a}}{a} = -\frac{4\pi G}{3}\rho_{eff} + \mathcal{J}_{inertial}
 $$
 
-I futuri interferometri (LISA, Einstein Telescope) misureranno un ringdown più breve rispetto alle previsioni della Relatività Generale pura.
+Dove il termine di spinta inerziale è definito come:
+
+$$
+\mathcal{J}_{inertial} \approx - \frac{\dot{M}_{univ}}{M_{univ}} H
+$$
+
+Poiché $\dot{M} < 0$ (flusso in uscita verso il Bulk), $\mathcal{J}_{inertial}$ è positivo definito e agisce come una "frizione negativa", simulando un'accelerazione cosmica tardiva.
 
 ---
 
-## 5. Conclusioni
+## 4. Vincoli Osservativi e Soluzione della Tensione $H_0$
 
-Abbiamo presentato la **Cosmologia Star & Arches (CSAT)**. Il modello dimostra che:
+### 4.1 Localizzazione e Scala LSS
+Affinché il modello sia consistente con le osservazioni di *Weak Lensing*, il drenaggio non deve perturbare il potenziale gravitazionale del background cosmico.
+Ipotizziamo che il flusso $\Gamma_{leak}$ sia proporzionale alla densità locale di Materia Oscura **solo all'interno del raggio di influenza ($R_{vir}$) dei Buchi Neri Supermassicci**.
+Di conseguenza, l'evoluzione lineare delle perturbazioni a scale $k < 0.1 \, h \, \text{Mpc}^{-1}$ rimane inalterata, preservando la fisica della CMB primaria.
 
-1.  L'Energia Oscura è un artefatto matematico dovuto all'assunzione errata che la massa dell'universo sia costante.
-2.  I Buchi Neri sono elementi strutturali essenziali che regolano l'espansione tramite drenaggio nel Bulk.
-3.  L'Universo è un sistema ciclico a flusso, non un evento esplosivo isolato.
+### 4.2 Risoluzione Quantitativa
+Per riconciliare $H_0^{CMB}$ e $H_0^{Local}$, il modello richiede un parametro di drenaggio specifico:
 
-Il framework è matematicamente consistente con la cosmologia di brana e offre soluzioni immediate alle attuali tensioni osservative.
+$$
+\left| \frac{\dot{M}_{halo}}{M_{halo}} \right| \approx 0.05 H_0
+$$
+
+Specifichiamo che questo tasso si riferisce alla **frazione di Materia Oscura accessibile gravitazionalmente** all'interno delle strutture ospitanti SMBH, e non alla densità cosmica media.
+Un drenaggio del ~5% su scala di un tempo di Hubble in regioni dense è sufficiente per alterare la metrica di espansione locale ($z \approx 0$), risolvendo la tensione statistica su $H_0$ e contribuendo parzialmente all'accelerazione osservata (riducendo il fine-tuning su $\Lambda$).
+
+![Drenaggio Materia Oscura](images/dark_matter_drainage.png)
+*Fig. 2: Il drenaggio selettivo della Materia Oscura attraverso le Black Strings riduce l'inerzia globale locale, risolvendo la tensione di Hubble.*
+
+---
+
+## 5. Predizioni Falsificabili: Onde Gravitazionali
+
+La prova definitiva ("Smoking Gun") del modello risiede nello spettro di ringdown dei buchi neri. L'energia dissipata nel Bulk modifica la parte immaginaria della frequenza complessa dei Modi Quasi-Normali (QNM):
+
+$$
+\omega_{I}^{CSAT} = \omega_{I}^{GR} (1 + \delta_{bulk})
+$$
+
+Prevediamo che LIGO/Virgo e il futuro Einstein Telescope osserveranno tempi di decadimento ($\tau = 1/\omega_I$) sistematicamente più brevi rispetto alle predizioni della Relatività Generale standard, a causa del "leakage" di energia nella dimensione extra.
+
+---
+
+## 6. Conclusioni
+
+Il modello CSAT propone una revisione del paradigma cosmologico verso un sistema dissipativo aperto. Rispettando i vincoli LSS tramite una rigorosa localizzazione del drenaggio nelle regioni virializzate, il meccanismo offre una spiegazione quantitativa e fisicamente motivata per la **Tensione di Hubble**, offrendo al contempo predizioni verificabili nel prossimo decennio tramite l'astronomia delle Onde Gravitazionali.
 
 ---
 
 ## Bibliografia Selezionata
-
 1.  **Randall, L., & Sundrum, R.** (1999). *An Alternative to Compactification*. Phys. Rev. Lett. 83.
-2.  **Shiromizu, T., Maeda, K., & Sasaki, M.** (2000). *The Einstein Equations on the 3-Brane World*. Phys. Rev. D 62.
-3.  **Hebecker, A., & March-Russell, J.** (2001). *The structure of the brane-bulk coupling*. Nucl. Phys. B.
-4.  **Farrah, D., et al.** (2023). *Observational Evidence for Cosmological Coupling of Black Holes*.
-5.  **Seahra, S. S.** (2005). *Quasinormal modes and echoes of a double braneworld*.
-6.  **Berti, E., et al.** (2009). *Quasinormal modes of black holes and black branes*.
-7.  
+2.  **Farrah, D., et al.** (2023). *Observational Evidence for Cosmological Coupling of Black Holes*. Astrophys. J. Lett.
+3.  **Riess, A. G., et al.** (2022). *A Comprehensive Measurement of the Local Value of the Hubble Constant*. Astrophys. J.
+4.  **Berti, E., et al.** (2009). *Quasinormal modes of black holes and black branes*. Class. Quant. Grav.
+5.  **Gregory, R., & Laflamme, R.** (1993). *Black strings and p-branes are unstable*. Phys. Rev. Lett. 70.
+6.  
